@@ -181,12 +181,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <?php endforeach;?>
     </div>
   </div>
-
+  </form> 
+<form method="post">  
   <div class="board-column">
     <h3>Pending</h3>
     <div class="board-form">
       <input value="<?php echo get_active_value("pending", $activeTask); ?>" type="text" name="pending" style="height: 30px; width: 70%" autocomplete="off"/>
-      <button type="submit" name="save-pending">Save</button>
+      <input style="padding:8px;" type="submit" name="save-pending"/>
+      
     </div>
     <div class="board-items">
       <?php foreach (get_tasks('pending') as $task): ?>
@@ -194,12 +196,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <?php endforeach;?>
     </div>
   </div>
-
+  </form> 
+<form method="post">  
   <div class="board-column">
     <h3>In Progress</h3>
     <div class="board-form">
       <input value="<?php echo get_active_value("progress", $activeTask); ?>" type="text" name="progress" style="height: 30px; width: 70%" autocomplete="off"/>
-      <button type="submit" name="save-progress">Save</button>
+      <input style="padding:8px;" type="submit" name="save-progress"/>
     </div>
     <div class="board-items">
       <?php foreach (get_tasks('progress') as $task): ?>
@@ -207,12 +210,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <?php endforeach;?>
     </div>
   </div>
-
+</form>  
+<form method="post">   
   <div class="board-column">
     <h3>Completed</h3>
     <div class="board-form">
       <input value="<?php echo get_active_value("completed", $activeTask); ?>" type="text" name="completed" style="height: 30px; width: 70%" autocomplete="off"/>
-      <button type="submit" name="save-completed">Save</button>
+  
+      <input style="padding:8px;" type="submit" name="save-completed"/>
     </div>
     <div class="board-items">
       <?php foreach (get_tasks('completed') as $task): ?>
