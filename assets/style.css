@@ -1,0 +1,55 @@
+body {
+    background: cornflowerblue;
+    min-width: 1500px;
+    width: 100%;
+  }
+  table td {
+    height: 50px;
+    padding: 5px;
+  }
+
+  table td button {
+    height: 35px;
+  }
+
+  table {
+    background: #CCCCCC;
+  }
+
+  .board-column{
+    float: left;
+    width: 20%;
+    background:#ebecf0;
+    padding: 5px;
+    margin-right: 5px;
+    min-height: 924px;
+
+  }
+
+  .board-column h3{
+    margin-left: 5px;
+  }
+
+  .board {
+    min-height: 30px;
+    padding: 10px;
+    background: white;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+    width: 91%;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 3px;
+  }
+  .board-form  button {
+    height: 35px;
+  }
+
+  .board-form {
+    margin-left: 5px;
+  }
+
+  .board-items{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 700px;
+  }
